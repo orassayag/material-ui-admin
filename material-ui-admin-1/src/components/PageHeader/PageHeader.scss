@@ -1,0 +1,26 @@
+.MuiPaper-root {
+    &.pager {
+        background-color: #fdfdff;
+
+        .page-header {
+            display: flex;
+            padding: 24px;
+            margin-bottom: 16px;
+
+            .page-icon {
+                display: inline-block;
+                padding: 16px;
+                color: #3c44b1;
+                border-radius: 12px;
+            }
+
+            .page-title {
+                padding-left: 24px;
+
+                .MuiTypography-subtitle2 {
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}

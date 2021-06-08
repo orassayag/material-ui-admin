@@ -1,0 +1,68 @@
+.header-container {
+    background-color: #ffffff;
+    transform: translateZ(0);
+
+    .item-1 {
+        border: 0px #ffffff solid;
+    }
+
+    .item-2 {
+        border: 0px #000000 solid;
+    }
+
+    .search-input {
+        opacity: 0.6;
+        padding: 0px 8px;
+        font-size: 0.8rem;
+
+        &:hover {
+            background-color: #f2f2f2;
+        }
+
+        .MuiSvgIcon-root {
+            margin-right: 8px;
+        }
+    }
+
+    .notifications {
+        .MuiBadge-badge {
+            background-color: #f83245;
+        }
+    }
+
+    .alarms {
+        .MuiBadge-badge {
+            background-color: #333996;
+        }
+    }
+}
+
+/* .MuiBadge-colorPrimary {
+    background-color: #333996;
+}
+
+.MuiBadge-badge {
+    background-color: #f83245;
+}
+ */
+/*     .palette {
+    .primary {
+        .main {
+            background-color: #333996;
+        }
+
+        .light {
+            background-color: #3c44b126;
+        }
+    }
+
+    .secondary {
+        .main {
+            background-color: #f83245;
+        }
+
+        .light {
+            background-color: #f8324526;
+        }
+    }
+} */
