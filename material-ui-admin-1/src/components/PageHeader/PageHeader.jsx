@@ -1,9 +1,8 @@
 import { Card, Paper, Typography } from '@material-ui/core';
 import './PageHeader.scss';
 
-const PageHeader = (props) => {
-    const { title, subtitle, icon } = props;
-
+const PageHeader = ({ title, subtitle, icon }) => {
+    
     return (
         <Paper
             className="pager"

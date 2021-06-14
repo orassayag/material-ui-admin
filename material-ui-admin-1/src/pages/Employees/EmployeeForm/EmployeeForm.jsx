@@ -1,8 +1,17 @@
-import { FormControl, FormControlLabel, FormLabel, Grid, RadioGroup, Radio } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import useForm from '../../../hooks/useForm';
 import Form from '../Form/Form';
 import Input from '../../../components/Input/Input';
+import RadioGroup from '../../../components/RadioGroup/RadioGroup';
+import Select from '../../../components/Select/Select';
+import * as employeeService from '../../../services/employee.service';
 import './EmployeeForm.scss';
+
+const genderItems = [
+    { id: 'male', title: 'Male' },
+    { id: 'female', title: 'Female' },
+    { id: 'other', title: 'Other' }
+];
 
 const initialFValues = {
     id: 0,
@@ -46,33 +55,20 @@ const EmployeeForm = () => {
                     item
                     xs={6}
                 >
-                    <FormControl>
-                        <FormLabel>
-                            Gender
-                        </FormLabel>
-                        <RadioGroup
-                            row
-                            name="gender"
-                            value={values.gender}
-                            onChange={inputChangeHandler}
-                        >
-                            <FormControlLabel
-                                value="male"
-                                control={<Radio />}
-                                label="Male"
-                            />
-                            <FormControlLabel
-                                value="female"
-                                control={<Radio />}
-                                label="Female"
-                            />
-                            <FormControlLabel
-                                value="other"
-                                control={<Radio />}
-                                label="Other"
-                            />
-                        </RadioGroup>
-                    </FormControl>
+                    <RadioGroup
+                        name="gender"
+                        label="Gender"
+                        value={values.gender}
+                        onChange={inputChangeHandler}
+                        items={genderItems}
+                    />
+                    <Select
+                    name="department"
+                    label="Department"
+                    value={values.departmentId}
+                    onChange={inputChangeHandler}
+                    options={employeeService.getDepartments()}
+                    />
                 </Grid>
             </Grid>
         </Form>

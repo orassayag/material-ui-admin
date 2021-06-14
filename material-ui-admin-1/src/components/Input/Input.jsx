@@ -1,7 +1,6 @@
 import { TextField } from '@material-ui/core';
 
-const Input = (props) => {
-    const { label, name, value, onChange } = props;
+const Input = ({ label, name, value, onChange }) => {
 
     return (
         <TextField

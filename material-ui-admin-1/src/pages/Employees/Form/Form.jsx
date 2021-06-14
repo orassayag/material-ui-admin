@@ -1,10 +1,10 @@
 import './Form.scss';
 
-const Form = (props) => {
+const Form = ({ children }) => {
 
     return (
-        <form className="employee-form">
-            {props.children}
+        <form className="employee-form" autoComplete="off">
+            {children}
         </form>
     );
 };
