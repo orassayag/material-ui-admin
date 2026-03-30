@@ -1,6 +1,8 @@
-# Material UI Admin Version 1
+# Material UI Admin Dashboard
 
-Built in June 2021. This project is a workflow of the tutorial by CodAffection ('https://www.youtube.com/watch?v=m-2_gb_3L7Q').
+A React-based admin dashboard built with Material-UI, demonstrating modern form design, validation, and employee management interface.
+
+Built in June 2021 as a workflow project following the tutorial by [CodAffection](https://www.youtube.com/watch?v=m-2_gb_3L7Q).
 
 ## Getting Started with Create React App
 
@@ -81,6 +83,52 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 * StackOverFlow: https://stackoverflow.com/users/4442606/or-assayag?tab=profile
 * LinkedIn: https://linkedin.com/in/orassayag
 
+## Architecture
+
+```mermaid
+graph TD
+    A[App] --> B[SideMenu]
+    A --> C[Header]
+    A --> D[Employees Page]
+    D --> E[PageHeader]
+    D --> F[EmployeeForm]
+    F --> G[useForm Hook]
+    F --> H[Input Component]
+    F --> I[Select Component]
+    F --> J[RadioGroup Component]
+    F --> K[Employee Service]
+    
+    style A fill:#e3f2fd
+    style D fill:#fff3e0
+    style F fill:#f3e5f5
+    style G fill:#e8f5e9
+```
+
+## Component Architecture
+
+```mermaid
+graph LR
+    A[Components] --> B[Layout]
+    A --> C[Form Controls]
+    A --> D[Pages]
+    
+    B --> B1[Header]
+    B --> B2[SideMenu]
+    B --> B3[PageHeader]
+    
+    C --> C1[Input]
+    C --> C2[Select]
+    C --> C3[RadioGroup]
+    
+    D --> D1[Employees]
+    D --> D2[EmployeeForm]
+    
+    style A fill:#2196f3,color:#fff
+    style B fill:#4caf50,color:#fff
+    style C fill:#ff9800,color:#fff
+    style D fill:#9c27b0,color:#fff
+```
+
 ## License
 
-This application has an UNLICENSED license.
+This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.

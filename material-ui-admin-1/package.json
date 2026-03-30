@@ -2,7 +2,7 @@
   "name": "material-ui-admin-1",
   "version": "0.1.0",
   "private": false,
-  "description": "This project is a workflow of the tutorial by CodAffection ('https://www.youtube.com/watch?v=m-2_gb_3L7Q').",
+  "description": "A React-based admin dashboard built with Material-UI, demonstrating modern form design, validation, and employee management interface.",
   "repository": {
     "type": "git",
     "url": "git://github.com/orassayag/material-ui-admin.git"
@@ -10,9 +10,17 @@
   "keywords": [
     "material-ui",
     "admin",
-    "dashboard"
+    "dashboard",
+    "react",
+    "form-validation",
+    "employee-management",
+    "material-design",
+    "responsive",
+    "ui-components",
+    "react-hooks",
+    "scss"
   ],
-  "license": "UNLICENSED",
+  "license": "MIT",
   "author": "Or Assayag <orassayag@gmail.com>",
   "contributors": [
     {
